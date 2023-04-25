@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/bootstrap/js/bootstrap.min.js">
+    <title>Manage Customer</title>
+
+    <style>
+        /*.imgcust{*/
+        /*    position: absolute;*/
+        /*    left: 20px;*/
+        /*    top: 60px;*/
+        /*}*/
+
+        .cust{
+            font-size: medium;
+            font-family: "Arial Black";
+            display: inline;
+            font-size: 25px;
+        }
+
+        .custom-form {
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #b6d4fe;
+            margin: 20px;
+        }
+
+        .btn2{
+            color: black;
+            background-color: darkseagreen;
+            display: inline;
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+            position: absolute;
+            right: 250px;
+            top: 145px;
+        }
+
+        .btn3{
+            color: black;
+            background-color: darkseagreen;
+            border-radius: 5px;
+            width: 100px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <img src="assests/images/ARwhite.jpg" alt="" width="25" height="25">
+        <a href="" class="navbar-brand" style="font-size: 15px"> &nbsp;&nbsp;AR POS System</a>
+        <div class="collapse navbar-collapse" id="divv">
+            <ul class="navbar-nav" style="font-size: smaller">
+                <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Customers</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <br>
+
+    <section class="custSec">
+        <img class="imgcust" src="assests/images/customer.jpg" alt="customer" width="50" height="50"  >
+        <h1 class="cust">Customer</h1>
+
+        <form class="custom-form">
+            <div class="navbar navbar-expand-sm navbar-dark bg-success" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Customer Search</div>
+            <br>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleText" placeholder="Input Name/NIC/Tp here...">
+            </div>
+
+            <button type="submit" class="btn btn-success">Search</button>
+        </form>
+
+        <button type="button" class="btn2 btn-success">Add Customer</button>
+        <button type="button" class="btn2 btn-success" style="right: 43px">View All Customers</button>
+
+        <button type="button" class="btn3 btn-success" style="left: 20px">Delete</button>
+        <button type="button" class="btn3 btn-success" style="left: 130px">Details</button>
+        <button type="button" class="btn3 btn-success" style="left: 240px">Clear</button>
+
+        <br><br>
+        <section class="container-fluid">
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Contact</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>anjali</td>
+                    <td>21</td>
+                    <td>panadura</td>
+                    <td>0778654344</td>
+                </tr>
+                <tr>
+                    <td>malithi</td>
+                    <td>18</td>
+                    <td>moratuwa</td>
+                    <td>0773654213</td>
+                </tr>
+                <tr>
+                    <td>dulanjana</td>
+                    <td>15</td>
+                    <td>colombo</td>
+                    <td>0725486934</td>
+                </tr>
+                <tr>
+                    <td>kasun</td>
+                    <td>20</td>
+                    <td>galle</td>
+                    <td>0756984521</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+    </section>
+
+
+
+    
+
+
+</body>
+</html>

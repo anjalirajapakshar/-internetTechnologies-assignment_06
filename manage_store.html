@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/bootstrap/js/bootstrap.min.js">
+    <title>manage items</title>
+
+    <style>
+
+        .item{
+            font-size: medium;
+            font-family: "Arial Black";
+            display: inline;
+            font-size: 25px;
+        }
+
+        .custom-form {
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #b6d4fe;
+            margin: 20px;
+        }
+
+        .btn2{
+            color: black;
+            background-color: darkseagreen;
+            display: inline;
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+            position: absolute;
+            right: 250px;
+            top: 145px;
+        }
+
+        .btn3{
+            color: black;
+            background-color: darkseagreen;
+            border-radius: 5px;
+            width: 100px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <img src="assests/images/ARwhite.jpg" alt="" width="25" height="25">
+        <a href="" class="navbar-brand" style="font-size: 15px"> &nbsp;&nbsp;AR POS System</a>
+        <div class="collapse navbar-collapse" id="divv">
+            <ul class="navbar-nav" style="font-size: smaller">
+                <li class="nav-item "><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Customers</a></li>
+                <li class="nav-item active"><a href="" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <br>
+
+    <section class="itemSec">
+        <img class="imgitems" src="assests/images/items.png" alt="item" width="50" height="50"  >
+        <h1 class="item">Items</h1>
+
+        <form class="custom-form">
+            <div class="navbar navbar-expand-sm navbar-dark bg-success" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Customer Search</div>
+            <br>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleText" placeholder="Input Item Name/Code here...">
+            </div>
+
+            <button type="submit" class="btn btn-success">Search</button>
+        </form>
+
+        <button type="button" class="btn2 btn-success">Add Item</button>
+        <button type="button" class="btn2 btn-success" style="right: 43px">View All Items</button>
+
+        <button type="button" class="btn3 btn-success" style="left: 20px">Delete</button>
+        <button type="button" class="btn3 btn-success" style="left: 130px">Details</button>
+        <button type="button" class="btn3 btn-success" style="left: 240px">Clear</button>
+
+        <br><br>
+        <section class="container-fluid">
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>P001</td>
+                    <td>Tresemme Kratin Smooth Shampoo</td>
+                    <td>25</td>
+                    <td>Rs.2100</td>
+                </tr>
+                <tr>
+                    <td>P002</td>
+                    <td>Signal ToothPaste</td>
+                    <td>30</td>
+                    <td>Rs.250</td>
+                </tr>
+                <tr>
+                    <td>P003</td>
+                    <td>Kohomba Soap</td>
+                    <td>50</td>
+                    <td>Rs.170</td>
+                </tr>
+                <tr>
+                    <td>P004</td>
+                    <td>Lemon Puff Biscuit</td>
+                    <td>15</td>
+                    <td>Rs.185</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+    </section>
+
+</body>
+</html>

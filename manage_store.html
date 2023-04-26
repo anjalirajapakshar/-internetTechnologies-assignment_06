@@ -38,12 +38,44 @@
             top: 145px;
         }
 
+        .btn4{
+            color: black;
+            background-color: darkseagreen;
+            display: inline;
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+            position: absolute;
+            right: 250px;
+            top: 145px;
+        }
+
         .btn3{
             color: black;
             background-color: darkseagreen;
             border-radius: 5px;
             width: 100px;
             position: absolute;
+        }
+
+        @media all and (max-width: 1100px) {
+            .btn2{
+                width: fit-content;
+                height: 35px;
+                left: 150px;
+                top: 80px;
+            }
+
+            .btn4{
+                width: fit-content;
+                height: 35px;
+                left: 250px;
+                top: 80px;
+            }
+
+            .custom-form {
+                width: 350px;
+            }
         }
 
     </style>
@@ -70,7 +102,7 @@
         <h1 class="item">Items</h1>
 
         <form class="custom-form">
-            <div class="navbar navbar-expand-sm navbar-dark bg-success" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Customer Search</div>
+            <div class="navbar navbar-expand-sm navbar-dark bg-success" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Search Items</div>
             <br>
             <div class="mb-3">
                 <input type="text" class="form-control" id="exampleText" placeholder="Input Item Name/Code here...">
@@ -80,7 +112,7 @@
         </form>
 
         <button type="button" class="btn2 btn-success">Add Item</button>
-        <button type="button" class="btn2 btn-success" style="right: 43px">View All Items</button>
+        <button type="button" class="btn4 btn-success" style="right: 43px">View All Items</button>
 
         <button type="button" class="btn3 btn-success" style="left: 20px">Delete</button>
         <button type="button" class="btn3 btn-success" style="left: 130px">Details</button>

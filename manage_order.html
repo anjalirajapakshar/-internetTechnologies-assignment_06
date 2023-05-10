@@ -11,13 +11,18 @@
     <title>Manage Order</title>
 
     <style>
+        .manage_order{
+            position: relative;
+        }
+
         .custom-form {
             width: 400px;
             height: 380px;
             padding: 10px;
             border: 1px solid #b6d4fe;
             margin: 20px;
-            position: relative;
+            position: absolute;
+            top: 24px;
         }
 
         #customform2{
@@ -28,7 +33,7 @@
             margin: 20px;
             position: absolute;
             left: 440px;
-            top: 76px;
+            top: 24px;
         }
 
         #customform3{
@@ -38,8 +43,8 @@
             border: 1px solid #b6d4fe;
             margin: 20px;
             position: absolute;
-            right: 30px;
-            top: 76px;
+            left: 980px;
+            top: 24px;
         }
 
         #idText{
@@ -150,37 +155,42 @@
             width: 280px;
             position: absolute;
         }
-
-        @media all and (max-width: 1350px) {
-            #customform2{
-                top: 486px;
-                left: 0px;
-            }
-
-            .table{
-                position: absolute;
-                top: 886px;
-
-            }
-
+        
+        .table{
+            position: absolute;
+            top: 468px;
         }
 
-        @media all and (max-width: 800px) {
-            #customform2{
-                top: 486px;
-                left: 0px;
-            }
+        /*@media all and (max-width: 1350px) {*/
+        /*    #customform2{*/
+        /*        top: 486px;*/
+        /*        left: 0px;*/
+        /*    }*/
 
-            #customform3{
-                top: 886px;
-                left: 0px;
-            }
+        /*    .table{*/
+        /*        position: absolute;*/
+        /*        top: 886px;*/
 
-            .table{
-                position: absolute;
-                top: 1296px;
+        /*    }*/
 
-            }
+        /*}*/
+
+        /*@media all and (max-width: 800px) {*/
+        /*    #customform2{*/
+        /*        top: 486px;*/
+        /*        left: 0px;*/
+        /*    }*/
+
+        /*    #customform3{*/
+        /*        top: 886px;*/
+        /*        left: 0px;*/
+        /*    }*/
+
+        /*    .table{*/
+        /*        position: absolute;*/
+        /*        top: 1296px;*/
+
+        /*    }*/
 
         }
 
@@ -190,19 +200,20 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <img src="assests/images/ARwhite.jpg" alt="" width="25" height="25">
-        <a href="" class="navbar-brand" style="font-size: 15px"> &nbsp;&nbsp;AR POS System</a>
-        <div class="collapse navbar-collapse" id="divv">
-            <ul class="navbar-nav" style="font-size: smaller">
-                <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Customers</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Items</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
-            </ul>
-        </div>
+<!--    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">-->
+<!--        <img src="assests/images/ARwhite.jpg" alt="" width="25" height="25">-->
+<!--        <a href="" class="navbar-brand" style="font-size: 15px"> &nbsp;&nbsp;AR POS System</a>-->
+<!--        <div class="collapse navbar-collapse" id="divv">-->
+<!--            <ul class="navbar-nav" style="font-size: smaller">-->
+<!--                <li class="nav-item active"><a href="" class="nav-link">Home</a></li>-->
+<!--                <li class="nav-item"><a href="" class="nav-link">Customers</a></li>-->
+<!--                <li class="nav-item"><a href="" class="nav-link">Items</a></li>-->
+<!--                <li class="nav-item"><a href="" class="nav-link">Orders</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
 
-    </nav>
+<!--    </nav>-->
+<div class="manage_order">
     <br>
 
     <section class="sec01">
@@ -263,7 +274,7 @@
     </section>
 
     <section class="container-fluid">
-        <table class="table">
+        <table class="table table-success table-striped-columns">
             <thead>
             <tr>
                 <th scope="col">Item Code</th>
@@ -292,7 +303,7 @@
         </table>
 
     </section>
-
+</div>
 
 </body>
 </html>

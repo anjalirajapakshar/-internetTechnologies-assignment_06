@@ -11,11 +11,9 @@
     <title>Manage Customer</title>
 
     <style>
-        /*.imgcust{*/
-        /*    position: absolute;*/
-        /*    left: 20px;*/
-        /*    top: 60px;*/
-        /*}*/
+        .manage_customer{
+            position: relative;
+        }
 
         .cust{
             font-size: medium;
@@ -26,9 +24,11 @@
 
         .custom-form {
             width: 600px;
+            height: 180px;
             padding: 10px;
             border: 1px solid #b6d4fe;
             margin: 20px;
+            position: absolute;
         }
 
         .btn2{
@@ -61,50 +61,118 @@
             border-radius: 5px;
             width: 100px;
             position: absolute;
+            top: 295px;
         }
 
-        @media all and (max-width: 1100px) {
-            .btn2{
-                width: fit-content;
-                height: 35px;
-                left: 210px;
-                top: 80px;
-            }
-
-            .btn4{
-                width: fit-content;
-                height: 35px;
-                left: 340px;
-                top: 80px;
-            }
-
-            .custom-form {
-                width: 350px;
-            }
+        #customform2{
+            width: 600px;
+            height: 180px;
+            padding: 10px;
+            border: 1px solid #b6d4fe;
+            margin: 20px;
+            position: absolute;
+            left: 650px;
+            top: 74px;
         }
+
+        #itemCode{
+            width: 200px;
+            display: inline;
+        }
+
+        #itemName{
+            width: 200px;
+            position: absolute;
+            right: 150px;
+            display: inline;
+        }
+
+        #price{
+            width: 200px;
+            position: absolute;
+            top: 130px;
+        }
+
+        #qtyOnHand{
+            width: 200px;
+            display: inline;
+            position: absolute;
+            right: 150px;
+            top: 130px;
+        }
+
+        .btn1{
+            width: 100px;
+            height: 37px;
+            border-radius: 5px;
+            position: absolute;
+            top: 130px;
+            right: 20px;
+        }
+
+        #tbl{
+            position: absolute;
+            top: 340px;
+        }
+
+        /*@media all and (max-width: 1100px) {*/
+        /*    .btn2{*/
+        /*        width: fit-content;*/
+        /*        height: 35px;*/
+        /*        left: 210px;*/
+        /*        top: 80px;*/
+        /*    }*/
+
+        /*    .btn4{*/
+        /*        width: fit-content;*/
+        /*        height: 35px;*/
+        /*        left: 340px;*/
+        /*        top: 80px;*/
+        /*    }*/
+
+        /*    .custom-form {*/
+        /*        width: 350px;*/
+        /*    }*/
+        /*}*/
 
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <img src="assests/images/ARwhite.jpg" alt="" width="25" height="25">
-        <a href="" class="navbar-brand" style="font-size: 15px"> &nbsp;&nbsp;AR POS System</a>
-        <div class="collapse navbar-collapse" id="divv">
-            <ul class="navbar-nav" style="font-size: smaller">
-                <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Customers</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Items</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Orders</a></li>
-            </ul>
-        </div>
+<!--    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">-->
+<!--        <img src="assests/images/ARwhite.jpg" alt="" width="25" height="25">-->
+<!--        <a href="" class="navbar-brand" style="font-size: 15px"> &nbsp;&nbsp;AR POS System</a>-->
+<!--        <div class="collapse navbar-collapse" id="divv">-->
+<!--            <ul class="navbar-nav" style="font-size: smaller">-->
+<!--                <li class="nav-item active"><a href="" class="nav-link">Home</a></li>-->
+<!--                <li class="nav-item"><a href="" class="nav-link">Customers</a></li>-->
+<!--                <li class="nav-item"><a href="" class="nav-link">Items</a></li>-->
+<!--                <li class="nav-item"><a href="" class="nav-link">Orders</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
 
-    </nav>
+<!--    </nav>-->
+<div class="manage_customer">
     <br>
 
     <section class="custSec">
         <img class="imgcust" src="assests/images/customer.jpg" alt="customer" width="50" height="50"  >
         <h1 class="cust">Customer</h1>
+
+
+        <form class="custom-form" id="customform2">
+            <div class="navbar navbar-expand-sm navbar-dark bg-success" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Add Customer</div>
+            <br>
+            <input type="text" class="form-control" id="itemCode" placeholder="Name...">
+
+            <input type="text" class="form-control" id="itemName" placeholder="Age...">
+
+            <input type="text" class="form-control" id="price" placeholder="Address...">
+
+            <input type="text" class="form-control" id="qtyOnHand" placeholder="Contact...">
+
+            <button type="button" class="btn1 btn-success">Add</button>
+        </form>
 
         <form class="custom-form">
             <div class="navbar navbar-expand-sm navbar-dark bg-success" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Customer Search</div>
@@ -116,17 +184,16 @@
             <button type="submit" class="btn btn-success">Search</button>
         </form>
 
-        <button type="button" class="btn2 btn-success">Add Customer</button>
-        <button type="button" class="btn4 btn-success" style="right: 43px">View All Customers</button>
+<!--        <button type="button" class="btn2 btn-success">Add Customer</button>-->
+<!--        <button type="button" class="btn4 btn-success" style="right: 43px">View All Customers</button>-->
 
         <button type="button" class="btn3 btn-success" style="left: 20px">Delete</button>
         <button type="button" class="btn3 btn-success" style="left: 130px">Details</button>
         <button type="button" class="btn3 btn-success" style="left: 240px">Clear</button>
 
         <br><br>
-        <section class="container-fluid">
-
-            <table class="table">
+        <section  id="tbl" class="container-fluid">
+            <table class="table table-success table-striped-columns">
                 <thead>
                 <tr>
                     <th scope="col">Customer Name</th>
@@ -162,16 +229,10 @@
                 </tr>
                 </tbody>
             </table>
-
         </section>
 
 
     </section>
-
-
-
-    
-
-
+</div>
 </body>
 </html>
